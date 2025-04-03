@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Task Management Homepage</title>
+	<style>
+		body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 40px 20px;
+        }
+
+        .btn {
+            background-color: #2980b9;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #3498db;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+	</style>
+</head>
+<body>
+<header>
+	<h1>Task Management System</h1>
+</header>
+
+<main>
+	<button class="btn" onclick="showOutput('Rajesh , Deepak, Shruthi...')">View Users</button>
+	<button class="btn" onclick="showOutput('Creating a Task...')">Create Task</button>
+	<button class="btn" onclick="showOutput('Editing a Task...')">Edit Task</button>
+	<button class="btn" onclick="showOutput('Deleting a Task...')">Delete Task</button>
+</main>
+
+<div id="output"></div>
+
+<script>
+	function showOutput(message) {
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = message;
+        outputDiv.style.display = "block";
+    }
+</script>
+</body>
+</html>
