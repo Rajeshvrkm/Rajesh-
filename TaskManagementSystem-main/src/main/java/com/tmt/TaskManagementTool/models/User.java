@@ -56,4 +56,7 @@ public class User {
     public JsonNode getRole() {
         return null;
     }
+
+    public void setRole(JsonNode role) {
+    }
 }

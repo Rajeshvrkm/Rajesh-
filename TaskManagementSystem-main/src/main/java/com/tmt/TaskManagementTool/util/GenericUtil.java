@@ -42,7 +42,7 @@ public class GenericUtil {
       user.setLastname(lastName);
       user.setUsername(userName);
       user.setPassword(password);
-      Role role = user.getRole();
+      JsonNode role = user.getRole();
       //role.setRid(roleid);
       //role.setName(roleName);
       user.setRole(role);
