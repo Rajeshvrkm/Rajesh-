@@ -14,7 +14,7 @@ background-color: white;
 	font-family: sans-serif;	
 }
 h1{
-	color: darkgreen;
+	color: rgba(174, 74, 141, 0.393);
 }
 .icons
 {
@@ -28,6 +28,6 @@ h1{
 	align-items: center;
 	justify-content: space-evenly;
 	width: 900px;
-	color: green;
+	color: rgba(159, 34, 161, 0.89);
 	
 }

@@ -6,7 +6,6 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.business.entities.Admin;
 import com.business.entities.User;
 import com.business.repositories.UserRepository;
 @Component
